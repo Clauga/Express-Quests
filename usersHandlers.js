@@ -11,6 +11,7 @@ const getUsers = (req, res) => {
       res.status(200).send("Ok");
     });
 };
+
 const getUserById = (req, res) => {
   const id = parseInt(req.params.id);
   database
@@ -44,6 +45,7 @@ const postUser = (req, res) => {
       res.status(500).send("Error saving user");
     });
 };
+
 module.exports = {
     getUsers,
     getUserById,
