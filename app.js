@@ -1,5 +1,7 @@
 require("dotenv").config();
+
 const express = require("express");
+
 const { validateMovie, validateUser } = require("./validators.js");
 
 const app = express();
